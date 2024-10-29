@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geek Café</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/menu.css">
+<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Geek Café</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item nav-item-ativo"><a class="nav-link nav-link-ativo" href="menu.html">Cardapio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro/login</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item nav-item-ativo"><a class="nav-link nav-link-ativo" href="menu.html">Cardapio</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro/login</a></li>
+            </ul>
+        </div>
+    </header>
+  
+    <main>
+        <header class="cabecalho-pagina">
+            <h1 class="cabecalho-pagina-titulo">Cardápio</h1>
+        </header>       
+        <section id="menu">
+            <div class="container">
+                <div class="item" id="item1">
+                    <img src="img/snoopy1.jpg" alt="Café Geek">
+                    <h3>Cafés Especiais</h3>
+                    <p>Experimente nossos cafés únicos, inspirados em personagens e universos Geek.</p>
+                </div>
+                <div class="item" id="item2">
+                    <img src="img/geek-cookies-group-shot.webp" alt="Cookie Geek">
+                    <h3>Cookies Deliciosos</h3>
+                    <p>Os cookies mais saborosos da galáxia! Temos opções para todos os gostos.</p>
+                </div>
+                <div class="item" id="item3">
+                    <img src="img/23155507236317.webp" alt="Salgado Geek">
+                    <h3>Lanches Incríveis</h3>
+                    <p>Saboreie nossos lanches criativos, inspirados em personagens e elementos da cultura Geek.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1 class="logo">Geek Café</h1>
+                <p>Desperte sua força Nerd!</p>
+                <div id="footer_social-media">
+                    <a href="https://instagram.com/fael_bernardes00?igshid=MmIzYWVlNDQ5Yg==" class="footer_link" id="instagram" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/rafaelb00" class="footer_link" id="linkedin" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/FaelB00" class="footer_link" id="github" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer_list">
+                <li>
+                    <h3>Navegação</h3>
+                </li>
+                <li>
+                    <a class="footer_link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="footer_link" href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a class="footer_link" href="cadastro.html">Cadastro/login</a>
+                </li>
+            </ul>
+            <div id="footer_image">
+                <img src="img/scorpio.png" alt="">
+            </div>
+        </div>
+        <div id="footer_copyright">
+            © 2023 Todos direitos reservados - Rafael Bernardes
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

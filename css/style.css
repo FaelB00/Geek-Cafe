@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap');
+
+* {
+    font-family: "Inter", "sans-serif";
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Início cabeçalho */
+
+.cabecalho{
+    background-color: #272725;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-item:hover::after{
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 2px;
+}
+
+.nav-item-ativo::after{
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #006fec;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 2px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.nav-link-ativo{
+    color: #006fec;
+}
+
+.logo{
+    background-image: url("../img/geek-cafe-logo.png");
+    background-repeat: no-repeat;
+    background-size: 250px;
+    text-indent: -99999px;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* Fim cabeçalho */
+
+
+
+/* Início Rodapé */
+
+:root{
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+footer{
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer_link{
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+
+#footer_social-media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social-media .footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social-media .footer_link i{
+    font-size: 1.25rem;
+}
+
+#footer_social-media .footer_link:hover{
+    opacity: 0.8;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9,#ff2992,#ff9807);
+}
+
+#linkedin{
+    background-color: #0e76a8;
+}
+
+#github{
+    background-color: #3f3f3f;
+}
+
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer_list .footer_link{
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer_list .footer_link:hover{
+    color: #7f37c9;
+}
+
+#footer_image{
+    margin-left: -100px;
+}
+
+#footer_image img{
+    width: 400px;
+    height: 170px;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+/* Fim do rodapé */
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open {
+        display: block;
+    }
+    .open {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer_content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 1.5rem;
+    }
+  
+    #footer_image {
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+  
+    #footer_image img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      max-height: 150px;
+    }
+}
+ 
+@media (max-width: 576px) {
+    #footer_contacts, .footer_list {
+      text-align: center;
+    }
+  
+    #footer_contacts h1, #footer_contacts p {
+      margin: 0;
+    }
+  
+    #footer_social-media {
+      justify-content: center;
+    }
+  
+    #footer_social-media .footer_link {
+      height: 40px;
+      width: 40px;
+      font-size: 1rem;
+    }
+  
+    #footer_image img {
+      max-width: 250px;
+      max-height: 100px;
+    }
+}

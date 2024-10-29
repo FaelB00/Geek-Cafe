@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+/* Início cabeçalho da página*/
+
+.cabecalho-pagina{
+    background-color: #add8e6;
+    padding-top: 30rem;
+    padding-bottom: 30rem;
+    background-image: url("../img/dia-orgulho-geek.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-top: -120px;
+}
+
+.cabecalho-pagina h2{
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    text-shadow: 2px 2px #272725;
+}
+
+.cabecalho-pagina p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Montserrat";
+    text-shadow: 1px 1px #272725;
+}
+
+/* Fim cabeçalho da página */
+
+/* Início Slider */
+
+#slide_img1{
+    width: 100%;
+    height: 100%;
+}
+
+#slide_img2{
+    width: 100%;
+    height: 100%;
+}
+
+.slider{
+    margin: 0 auto 0 50px;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 300px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 300px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #006fec;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #006fec;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+.navigation-auto div{
+    border: 2px solid #222a31;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navigation-auto{
+    position: absolute;
+    margin-top: 360px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #006fec;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #006fec;
+}
+
+/* Fim slider */
+
+/* Container 1 */
+
+.container1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #171717;
+    padding: 8rem;
+}
+
+.container1_descricao{
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+}
+
+#container1_button{
+
+    width: 50%;
+    border: none;
+    margin-top: 20px;
+    background-color: #006fec;
+    padding: 1rem;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+#container1_button:hover{
+    background-color: #add8e6;
+}
+
+#container1_button:hover a{
+    color: #000;
+}
+
+#container1_button a{
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
+
+/* Fim container 1 */
+
+/* Container 2 */
+
+.container2{
+    display: grid;
+    gap: 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #272725;
+    padding: 8rem;
+
+}
+
+.container2_descricao{
+    color: #fff;
+    text-align: left;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+.container2 h2{
+    color: #006fec;
+    margin-bottom: 20px;
+}
+
+.container2 p{
+    font-size: 1.5rem;
+}
+
+.container2_image{
+    padding: 0;
+}
+
+.container2_image img{
+    height: 400px;
+}
+
+#container2_button{
+    width: 40%;
+    border: none;
+    margin-top: 20px;
+    background-color: #006fec;
+    padding: 1rem;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+#container2_button:hover{
+    background-color: #add8e6;
+}
+
+#container2_button:hover a{
+    color: #000;
+}
+
+#container2_button a{
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
+
+/* Fim container 1 */
+
+/* Mapa */
+
+.mapa{
+    background-color: #001a00;    
+    height: 0;
+    padding-bottom: 30%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.mapa iframe{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Fim mapa */
+
+@media screen and (max-width: 768px) {
+    .cabecalho-pagina {
+      padding-top: 15rem;
+      padding-bottom: 15rem;
+      margin-top: 0px;
+    }
+  
+    .cabecalho-pagina h2 {
+      font-size: 50px;
+    }
+  
+    .cabecalho-pagina p {
+      font-size: 18px;
+    }
+    
+    .container1, .container2 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 3rem 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .cabecalho-pagina {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+      margin-top: 0px;
+    }
+  
+    .cabecalho-pagina h2 {
+      font-size: 40px;
+    }
+  
+    .cabecalho-pagina p {
+      font-size: 16px;
+    }
+
+    .container1_descricao, .container2_descricao {
+        text-align: center;
+    }
+    
+    .container1_descricao h2, .container2_descricao h2 {
+        font-size: 30px;
+    }
+    
+    .container1_descricao p, .container2_descricao p {
+        font-size: 18px;
+    }
+    
+    .container2_image img {
+        height: 300px;
+    }
+    
+    #container1_button, #container2_button {
+        width: 100%;
+    }
+  }
